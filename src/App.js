@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import { ReactComponent as Logo } from './assets/img/logo_mark_white-subtract_turboflakes_.svg'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="root">
+      <div className="wrapper">
+        <Logo fill='currentColor' className="logo"/>
+      </div>
+      <p className="quote">
+      Life is like riding a bicycle. To keep your balance, you must keep moving.<br/>
+      <b>― Albert Einstein</b>
+      </p>
+      <h1 className="message">
+       {`Launching soon // turboflakes.io`}
+      </h1>
     </div>
   );
 }

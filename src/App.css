@@ -1,21 +1,9 @@
-.App {
-  text-align: center;
+.root {
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +12,86 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  color: #FFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quote {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  color: #FFF;
 }
+
+.message {
+  font-family: "Gilroy-Heavy";
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  color: #FFF;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    -webkit-animation: Logo 20s linear infinite;
+    -moz-animation: Logo 20s linear infinite;
+    -o-animation: Logo 20s linear infinite;
+    animation: Logo 20s linear infinite;
+  }
+
+  .wrapper {
+    background: linear-gradient(90deg, #ED1C24, #FF087D);
+    background-size: 400% 100%;
+    -webkit-animation: BackgroundGradient 20s ease-in infinite;
+    -moz-animation: BackgroundGradient 20s ease-in infinite;
+    -o-animation: BackgroundGradient 20s ease-in infinite;
+    animation: BackgroundGradient 20s ease-in infinite; 
+  }
+
+}
+
+@-webkit-keyframes BackgroundGradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes BackgroundGradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes BackgroundGradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes BackgroundGradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@-webkit-keyframes Logo {
+  0%{height: 60vh; opacity: 0.2;}
+  50%{height:100vh; opacity: 1;}
+  100%{height:60vh; opacity: 0.2;}
+}
+@-moz-keyframes Logo {
+  0%{height: 60vh; opacity: 0.2;}
+  50%{height:100vh; opacity: 1;}
+  100%{height:60vh; opacity: 0.2;}
+}
+@-o-keyframes Logo {
+  0%{height: 60vh; opacity: 0.2;}
+  50%{height:100vh; opacity: 1;}
+  100%{height:60vh; opacity: 0.2;}
+}
+@keyframes Logo {
+  0%{height: 60vh; opacity: 0.2;}
+  50%{height:100vh; opacity: 1;}
+  100%{height:60vh; opacity: 0.2;}
+}
+

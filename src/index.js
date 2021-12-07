@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './assets/fonts/Gilroy/Gilroy-Heavy.woff';
+import './assets/fonts/Gilroy/Gilroy-Heavy.woff2';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
