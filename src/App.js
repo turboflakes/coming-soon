@@ -12,7 +12,7 @@ function App() {
       <b>― Albert Einstein</b>
       </p>
       <h1 className="message">
-       {`Launching soon // turboflakes.io`}
+       Coming Soon // turboflakes.io
       </h1>
     </div>
   );
